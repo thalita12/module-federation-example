@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active.react {
+    background-color: #61dafb;
+    color: #000;
+}
+
+.active.vue {
+    background-color: #32A16F;
+}
+
+.active.angular {
+    background-color: #DE0031;
+}

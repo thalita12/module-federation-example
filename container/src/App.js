@@ -5,6 +5,8 @@ const MFE_Header = React.lazy(
 );
 
 function App() {
+    const children = <></>
+
   return (
     <div className="App">
       <h2>Container</h2>
@@ -12,6 +14,8 @@ function App() {
         <React.Suspense fallback='Loading Header'>
             <MFE_Header />
         </React.Suspense>
+
+        <div>{ children }</div>
     </div>
   );
 }
